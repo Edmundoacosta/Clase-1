@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+.title {
+	font-size: 20px;
+}
+
+.text {
+	font-size: 17px;
+
+}
+
+.btn {
+	margin-bottom: 15px;
+}
+
+.space {
+	margin: 15px 0px;
+}
+
+i {
+	margin-right: 10px;
+}
+
+.click {
+	padding: 5px;
+}

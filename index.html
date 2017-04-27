@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 1 de Edmundo</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Clase 1</h1>
+	<section>
+		<div class="container">
+			<h3>Uno puede definir lo que sea en una varible para usarlos en otro momento</h3>
+			<p class="title">Las Variables pueden ser de tipo:</p>
+			<ul class="list-group">
+				<li class="list-group-item"><b>String</b> (Cadenas de Texto)</li>
+				<li class="list-group-item"><b>Numero</b> (entero,decimal,etc)</li>
+				<li class="list-group-item"><b>Boolean</b> (Ya sea true o false)</li>
+			</ul>
+			<p class="text">Una variable se puede definir de la siguiente forma:</p>
+			<code>var 'nombre que quieras' = 'valor';</code>
+			<h4>Ejemplo:</h4>
+				<code>var nombre = 'Edmundo';</code><br>
+				<code>var suma = 5 + 2;</code><br>
+				<code>var set = true;</code>
+			<hr>
+			<p class="text">En una varible tambien se puede almacenar el <b>VALOR</b> de algun tag de html, ya sea por id o class</p>
+			<p>Aunque más se usa para almacenar valores que se ingresan en html ejemplo:</p>
+			<p>rellena estos campos porfavor</p>
+			<form>
+			    <div class="form-group">
+			      <label>Name:</label>
+			      <input type="text" class="form-control" id="user">
+			    </div>
+			    <div class="form-group">
+			      <label>Password:</label>
+			      <input type="password" class="form-control" id="pass">
+			    </div>
+			</form>
+			<button onclick="enviar()" class="btn btn-success">Enviar</button>
+			<p>Luego de que hayas presiona el boton Enviar debera mostrarte en consola los valores que pusiste en <b>Name y Password</b></p>
+			<hr>
+			<p class="title">El scope de JS</p>
+			<p class="text">El scope se define por global y local, Todo esta explicado en el <b>main.js</b></p>
+			<hr>
+			<p class="title">Arrays y Objetos</p>
+			<p class="text">¿Que es un Array?</p>
+			<p class="space">Un Array es una lista de valores, que puede contener cualquier tipo ya mencionados antes (String,Number,Boolean).</p>
+			<p class="text">Un Array se puede definir de la siguiente forma:</p>
+			<p>En este caso lo hemos definido en una variable para poder utilizarla en cualquier lugar</p>
+			<code>var 'nombre que quieras' = ['valor1', 'valor2', 'valor3', 'valorx'];</code>
+			<h4>Ejemplos:</h4>
+				<code>var alumnos = ['Edmundo', 'Richard', 'Paolo', 'Bruno', 'Ludvin', 'GC'];</code><br>
+				<code>var numerosPrimos = [1, 3, 5, 7, 11, 13, 17, 19, 23, ... ];</code><br>
+			<p class="text space">Y nosotros podemos insertar infinitos valores, y ahora vamos a insertar nuestros propios valores</p>
+			<div class="form-group">
+		      	<label>Inserta un valor para añadir:</label>
+		      	<input type="text" class="form-control" id="valor">
+		    </div>
+		    <button onclick="insertar()" class="btn btn-success">Añadir al Array</button>
+		    <hr>
+		    <p class="text">¿Que es un Objeto?</p>
+			<p class="space">Un Objeto contiene propiedades y esta conformado por nombre : valor (Sé que esto es dificil de explicar, tambien de entender pero con la practica se logra todo)</p>
+			<p class="text">Un Objeto se puede definir de la siguiente forma:</p>
+			<p>En este caso tambien lo hemos definido en una variable para poder utilizarla en cualquier lugar</p>
+			<code> var 'nombre que quieras' = {
+				name: 'valor',
+				name2: 'valor2',
+				name3: 'valor3',
+				namex: 'valorx'
+			}</code>
+			<p>Donde valor puede contener cualquier valor sea tipo string/number/boolean</p>
+			<h4>Ejemplos:</h4>
+			<code>var Edmundo = {
+				name: 'Edmundo',
+				lastname: 'Acosta',
+				age: 18,
+				carrera: 'DDMD'
+			}</code><br>
+			<code>var Auto = {
+				marca: 'Audi',
+				valor: 500,
+				velocidad: 80,
+				peso: 90,
+				Dueño: 'Bruno'
+			}</code>
+			<p class="space text">Este codigo lo entenderan mejor si lo ven en <b>main.js</b> pues ahi sale como se estructura principalmente un objeto</p>
+			<p class="text space">Con esto ya tenemos la Base para empezar a hacer los ejercicios que les mandare, tambien les recomiendo que lean documentacion</p>
+			<a class="click label label-success" href="https://www.w3schools.com/js/default.asp"><i class="glyphicon glyphicon-heart"></i>Hazme Click!</a>
+			<p class="space"></p>
+		</div>
+	</section>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
